@@ -1,0 +1,27 @@
+.Card{
+    transition: 0.4s;
+    cursor: pointer;
+    min-height: 80px;
+    margin: 8px;
+    padding:18px;
+    background-color: lighten( $gray, 12% );
+    @include border-radius(8px);
+
+    &.active{
+        @include boxshadow(0, 6px, 38px, -6px, #000);
+    }
+}
+
+.panel {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    p{font-size: 2em}
+
+    &.visible{
+        max-height:2000px;
+    }
+
+}
+
+

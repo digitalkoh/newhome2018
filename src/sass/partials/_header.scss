@@ -1,0 +1,15 @@
+
+header{
+    background-color: $header-color;
+
+    & > div{
+        width:90%;
+        margin:auto;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 22px;
+        grid-auto-rows: 60px;
+        align-items:center;
+    }
+}
