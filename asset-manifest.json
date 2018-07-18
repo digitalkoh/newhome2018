@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.eb810caf.css",
-  "main.css.map": "static/css/main.eb810caf.css.map",
-  "main.js": "static/js/main.2adcd4a2.js",
-  "main.js.map": "static/js/main.2adcd4a2.js.map",
+  "main.css": "static/css/main.a32a43c2.css",
+  "main.css.map": "static/css/main.a32a43c2.css.map",
+  "main.js": "static/js/main.cfaee9c8.js",
+  "main.js.map": "static/js/main.cfaee9c8.js.map",
   "static/media/FSThriveElliotWeb-Bold.eot": "static/media/FSThriveElliotWeb-Bold.f16f7ac8.eot",
   "static/media/FSThriveElliotWeb-Bold.svg": "static/media/FSThriveElliotWeb-Bold.8686f2b6.svg",
   "static/media/FSThriveElliotWeb-Bold.ttf": "static/media/FSThriveElliotWeb-Bold.84bb92fd.ttf",
@@ -21,5 +21,6 @@
   "static/media/FSThriveElliotWeb-Regular.svg": "static/media/FSThriveElliotWeb-Regular.77007033.svg",
   "static/media/FSThriveElliotWeb-Regular.ttf": "static/media/FSThriveElliotWeb-Regular.ab5b4279.ttf",
   "static/media/FSThriveElliotWeb-Regular.woff": "static/media/FSThriveElliotWeb-Regular.6dd1eaf1.woff",
-  "static/media/FSThriveElliotWeb-Regular.woff2": "static/media/FSThriveElliotWeb-Regular.cb7d6312.woff2"
+  "static/media/FSThriveElliotWeb-Regular.woff2": "static/media/FSThriveElliotWeb-Regular.cb7d6312.woff2",
+  "static/media/logo.svg": "static/media/logo.5d5d9eef.svg"
 }
