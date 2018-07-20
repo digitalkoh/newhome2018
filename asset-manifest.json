@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.0096db13.css",
-  "main.css.map": "static/css/main.0096db13.css.map",
-  "main.js": "static/js/main.9e6aab81.js",
-  "main.js.map": "static/js/main.9e6aab81.js.map",
+  "main.css": "static/css/main.4d48e97d.css",
+  "main.css.map": "static/css/main.4d48e97d.css.map",
+  "main.js": "static/js/main.b19f4d32.js",
+  "main.js.map": "static/js/main.b19f4d32.js.map",
   "static/media/FSThriveElliotWeb-Bold.eot": "static/media/FSThriveElliotWeb-Bold.f16f7ac8.eot",
   "static/media/FSThriveElliotWeb-Bold.svg": "static/media/FSThriveElliotWeb-Bold.8686f2b6.svg",
   "static/media/FSThriveElliotWeb-Bold.ttf": "static/media/FSThriveElliotWeb-Bold.84bb92fd.ttf",
@@ -22,5 +22,7 @@
   "static/media/FSThriveElliotWeb-Regular.ttf": "static/media/FSThriveElliotWeb-Regular.ab5b4279.ttf",
   "static/media/FSThriveElliotWeb-Regular.woff": "static/media/FSThriveElliotWeb-Regular.6dd1eaf1.woff",
   "static/media/FSThriveElliotWeb-Regular.woff2": "static/media/FSThriveElliotWeb-Regular.cb7d6312.woff2",
-  "static/media/banner1.jpg": "static/media/banner1.1de75a3e.jpg"
+  "static/media/banner1.jpg": "static/media/banner1.1de75a3e.jpg",
+  "static/media/icon_art.svg": "static/media/icon_art.77074bd3.svg",
+  "static/media/logo_client.svg": "static/media/logo_client.f03ac5d5.svg"
 }
