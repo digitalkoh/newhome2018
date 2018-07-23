@@ -423,6 +423,23 @@ table {
   border-spacing: 0;
 }
 
+.App-banner .button {
+  background-color: #2ec4f1;
+}
+.App-banner .button:hover {
+  background-color: #0c88ad;
+}
+
+footer {
+  color: #8294a9;
+}
+footer a {
+  color: #ededed;
+}
+footer .border {
+  border-top: solid 1px #54667b;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -448,64 +465,220 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: whitesmoke;
+}
+body #root {
+  font-family: FSThriveElliotWeb-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 img {
   max-width: 100%;
   display: block;
 }
 
-body {
-  margin: 0;
+a {
+  transition: 0.4s;
+  text-decoration: none;
+  color: #2ec4f1;
+  outline: none;
+}
+a:hover {
+  color: #8edff7;
+}
+
+.container {
+  width: 99%;
+  max-width: 1200px;
+  margin: auto;
   padding: 0;
-  font-family: sans-serif;
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
-  background-color: #676576;
+  transition: 0.4s;
+  color: #fff;
+  background-color: rgba(5, 26, 52, 0.8);
+  text-align: center;
+  padding: 0 0 0 12px;
+}
+header.active {
+  box-shadow: 0 -16px 18px 12px #000;
 }
 header > div {
-  width: 90%;
-  margin: auto;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 22px;
-  grid-auto-rows: 60px;
+  grid-template-columns: 240px auto 54px 54px 54px;
+  grid-gap: 0;
+  grid-auto-rows: 54px;
   align-items: center;
+}
+header .Head-search {
+  background-color: #051a34;
+}
+header .Head-search:hover {
+  background-color: #082850;
+}
+header .Head-profile:hover {
+  background-color: rgba(5, 26, 52, 0.4);
+}
+header .Head-message:hover {
+  background-color: rgba(5, 26, 52, 0.4);
+}
+
+nav li {
+  font-size: 0.85em;
+  display: inline;
+  margin: 2em;
+}
+nav li a {
+  color: #fff;
+}
+
+.App-banner {
+  background-color: #d1d0d7;
+}
+.App-banner .banner-content {
+  top: 100px;
+  width: 50%;
+  min-width: 420px;
+}
+.App-banner h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+.App-banner p {
+  font-size: 1.3em;
+  margin: 8px 0;
 }
 
 .Card {
   transition: 0.4s;
-  cursor: pointer;
-  min-height: 80px;
-  margin: 8px;
-  padding: 18px;
-  background-color: #ebebeb;
+  margin: 8px 0;
+  background-color: #fff;
+  border: solid 1px #d1d2d4;
   /* usage @import border-radius(12px) */
-  -webkit-border-radius: 8px;
-  border-radius: 8px;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
 }
+.Card .cardTop {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 30px 2fr 2fr 80px;
+  grid-gap: 18px;
+  align-items: center;
+  min-height: 140px;
+  padding: 18px;
+}
+.Card .cardTop .alert {
+  width: 20px;
+  height: 40px;
+  background: transparent url("../img/icon_art.svg") -19px -278px no-repeat;
+  background-size: 900px;
+}
+.Card .cardTop .arrow :first-child {
+  width: 40px;
+  height: 40px;
+  color: #b3b3b3;
+}
+.Card h3 {
+  font-size: 1.5em;
+  padding-right: 52px;
+}
 .Card.active {
-  -moz-box-shadow: 0 6px 38px -6px #000;
-  -webkit-box-shadow: 0 6px 38px -6px #000;
-  box-shadow: 0 6px 38px -6px #000;
+  -moz-box-shadow: 0 0 10px -4px #000;
+  -webkit-box-shadow: 0 0 10px -4px #000;
+  box-shadow: 0 0 10px -4px #000;
 }
-
-.panel {
-  max-height: 0px;
+.Card .panel {
+  display: none;
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  padding: 18px;
 }
-.panel p {
+.Card .panel p {
   font-size: 2em;
 }
-.panel.visible {
-  max-height: 2000px;
+.button {
+  margin: 22px 0;
+  font-size: 1.2em;
+  color: #fff;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: 10px 3em;
+  display: inline-block;
+}
+.more .button {
+  color: #2ec4f1;
+  border: solid 1px #2ec4f1;
+  font-size: 1em;
+  padding: 8px 2em;
+  margin: 42px 0;
+}
+.more .button:hover {
+  border-color: #0c88ad;
+  color: #0c88ad;
 }
 
-nav li {
+.Related-block {
+  background-color: #fff;
+}
+
+footer {
+  background-color: #2f4258;
+  padding: 36px 0;
+  font-size: 0.8em;
+}
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 8px;
+  align-items: center;
+}
+footer > div :first-child {
+  justify-self: start;
+}
+footer > div .links {
+  justify-self: center;
+}
+footer > div .links li {
   display: inline;
-  margin: 2em;
+  margin: 0 1em;
+}
+footer > div .social {
+  justify-self: end;
+}
+footer > div .copyright {
+  grid-area: 2/1/3/6;
+  margin-top: 20px;
+  padding: 28px 0 0 0;
+}
+
+.visual > div {
+  width: 100%;
+  height: 80px;
+  background: transparent url("../img/tempGraph_01.svg") 0 50% no-repeat;
+  background-size: contain;
+}
+.visual > div#tempGraph_01 {
+  background-image: url("../img/tempGraph_01.svg");
+}
+.visual > div#tempGraph_02 {
+  background-image: url("../img/tempGraph_02.svg");
+}
+.visual > div#tempGraph_03 {
+  background-image: url("../img/tempGraph_03.svg");
+}
+.visual > div#tempGraph_07 {
+  background-image: url("../img/tempGraph_07.svg");
 }
 
 /*# sourceMappingURL=App.css.map */
