@@ -1,6 +1,8 @@
 nav{
     li{
+        font-size: .85em;
         display:inline;
-        margin:2em
+        margin:2em;
+        a{color: $header-text-color}
     }
 }

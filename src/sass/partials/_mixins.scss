@@ -1,4 +1,18 @@
 
+@mixin font($sizeValue: 1.6, $weight: 'Regular') {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+  @if $weight == 'Light' {
+      font-family: $font-family
+  } @else if $weight == 'Bold' {
+      font-family: $font-family-bold
+  } @else if $weight == 'Heavy' {
+      font-family: $font-family-heavy
+  } @else {
+      font-family: $font-family-regular
+  }
+}
+
 @mixin boxshadow($h-offset: 0, $v-offset: 9px, $blur: 57px, $spread: 1px, $color: rgba(0, 0, 0, 0.6)) {
     -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
  -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;

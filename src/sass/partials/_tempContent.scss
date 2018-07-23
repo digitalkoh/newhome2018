@@ -1,0 +1,9 @@
+.visual > div{
+    width:100%; height:80px;
+    background: transparent url('../img/tempGraph_01.svg') 0 50% no-repeat; background-size:contain;
+
+    &#tempGraph_01{background-image: url('../img/tempGraph_01.svg')}
+    &#tempGraph_02{background-image: url('../img/tempGraph_02.svg')}
+    &#tempGraph_03{background-image: url('../img/tempGraph_03.svg')}
+    &#tempGraph_07{background-image: url('../img/tempGraph_07.svg')}
+}

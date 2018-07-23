@@ -1,27 +1,41 @@
+
 .Card{
+    .cardTop{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: 30px 2fr 2fr 80px;
+        grid-gap: 18px;
+        align-items: center;
+        min-height: 140px;
+        padding:18px;
+
+        .alert{width:20px; height:40px; background: transparent url('../img/icon_art.svg') -19px -278px no-repeat; background-size:900px}
+        .arrow :first-child{width: 40px; height: 40px; color: darken($app-gray, 10%)}
+    }
+
     transition: 0.4s;
-    cursor: pointer;
-    min-height: 80px;
-    margin: 8px;
-    padding:18px;
-    background-color: lighten( $gray, 12% );
-    @include border-radius(8px);
+    margin: 8px 0;
+    background-color: $card-bg-color;
+    border: solid 1px $card-border-color;
+    @include border-radius(18px);
+
+    h3{font-size:1.5em; padding-right:52px}
 
     &.active{
-        @include boxshadow(0, 6px, 38px, -6px, #000);
-    }
-}
-
-.panel {
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    p{font-size: 2em}
-
-    &.visible{
-        max-height:2000px;
+        @include boxshadow(0, 0, 10px, -4px, #000);
     }
 
+    .panel {        
+        display:none;
+        overflow: hidden;
+        p{font-size: 2em}
+        
+        padding:18px;
+        
+        &.visible{
+          
+        }
+    }
 }
 
 

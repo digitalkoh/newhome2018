@@ -1,15 +1,35 @@
 
 header{
-    background-color: $header-color;
+    transition:0.4s;
+    &.active{box-shadow: 0 -16px 18px 12px #000}
+
+    color: $header-text-color;
+    background-color: rgba(5, 26, 52, .8);
+    text-align: center;
+    padding: 0 0 0 12px;
 
     & > div{
-        width:90%;
-        margin:auto;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
 
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 22px;
-        grid-auto-rows: 60px;
+        grid-template-columns: 240px auto 54px 54px 54px;
+        // grid-template-columns: repeat(5, 1fr);
+        grid-gap: 0;
+        grid-auto-rows: 54px;
         align-items:center;
+        
+    }
+
+    .Head-search{
+        background-color: $blue-dark;
+        &:hover{background-color: lighten($blue-dark, 6%)}
+    }
+    .Head-profile{
+        &:hover{background-color: rgba(5, 26, 52, .4)}
+    }
+    .Head-message{
+        &:hover{background-color: rgba(5, 26, 52, .4)}
     }
 }

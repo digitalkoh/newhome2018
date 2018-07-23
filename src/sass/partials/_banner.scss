@@ -1,0 +1,9 @@
+
+.App-banner{
+    background-color: lighten($blue-gray, 40%);
+
+    .banner-content{top: 100px; width: 50%; min-width: 420px}
+
+    h1{font-size: 3em; line-height:1em}
+    p{font-size: 1.3em; margin:8px 0}
+}
